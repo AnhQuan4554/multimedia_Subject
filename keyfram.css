@@ -1,0 +1,53 @@
+@keyframes scale {
+  0% {
+    transform: scale(-1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes move {
+  0% {
+    top: 30%;
+    left: 7%;
+  }
+  13% {
+    top: 22%;
+    left: 11%;
+  }
+  25% {
+    top: 16%;
+    left: 14%;
+  }
+  38% {
+    top: 4%;
+    left: 19%;
+  }
+
+  50% {
+    top: 4%;
+    left: 24%;
+  }
+  63% {
+    top: 11%;
+    left: 30%;
+    /* left: 28%; */
+  }
+  75% {
+    top: 17%;
+    left: 34%;
+    /* left: 32%; */
+  }
+  88% {
+    top: 24%;
+    left: 36%;
+  }
+
+  100% {
+    top: 30%;
+    left: 40%;
+  }
+}

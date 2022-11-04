@@ -1,0 +1,215 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Inter";
+  font-style: normal;
+}
+
+.subjectMultimedia {
+  width: 100%;
+  padding: 50px 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  /* ÌnorrTeach */
+}
+
+.subjectMultimedia .wrapInforSubject {
+  width: 60%;
+}
+
+.subjectMultimedia .wrapInforSubject .tittle {
+  height: 24px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 24px;
+  color: #28587e;
+  margin-bottom: 30px;
+}
+
+.subjectMultimedia .wrapInforSubject span.describeSubject {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #737373;
+}
+
+.subjectMultimedia .wrapInforSubject .backGroundAni {
+  margin-top: 20px;
+  background-image: url("./img/v974-06.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 390px;
+  position: relative;
+}
+
+.subjectMultimedia .wrapInforSubject .backGroundAni .box1,
+.subjectMultimedia .wrapInforSubject .backGroundAni .box2,
+.subjectMultimedia .wrapInforSubject .backGroundAni .box3 {
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+}
+
+.subjectMultimedia .wrapInforSubject .backGroundAni .box1 {
+  background-color: red;
+  top: 30%;
+  left: 7%;
+  -webkit-animation: scale 1s ease-in-out, move 5s linear 1s;
+          animation: scale 1s ease-in-out, move 5s linear 1s;
+}
+
+.subjectMultimedia .wrapInforSubject .backGroundAni .box2 {
+  background-color: green;
+  top: 0;
+  right: 10%;
+}
+
+.subjectMultimedia .wrapInforSubject .backGroundAni .box3 {
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -100%);
+          transform: translate(-50%, -100%);
+  background-color: yellow;
+}
+
+.subjectMultimedia .wrapInforSubject .navBar {
+  width: 100%;
+  min-height: 60px;
+  background: #ffffff;
+  margin-top: 30px;
+  -webkit-box-shadow: 0px 15px 50px 5px rgba(255, 228, 89, 0.1);
+          box-shadow: 0px 15px 50px 5px rgba(255, 228, 89, 0.1);
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 16px;
+}
+
+.subjectMultimedia .wrapInforSubject .navBar span {
+  display: block;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #737373;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.subjectMultimedia .wrapInforSubject .navBar span:hover {
+  background: #f69522;
+  color: #fff;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+
+.subjectMultimedia .wrapInforSubject .navBar span.active {
+  background: #f69522;
+  color: #fff;
+}
+
+.subjectMultimedia .wrapInforSubject .inforNavbar {
+  min-height: 260px;
+  background-color: #f9f9f9;
+  color: #737373;
+  padding: 20px;
+}
+
+.subjectMultimedia .wrapInforSubject .inforNavbar .inforNavbar_item {
+  display: none;
+}
+
+.subjectMultimedia .wrapInforSubject .inforNavbar .inforNavbar_item.active {
+  display: block;
+}
+
+.subjectMultimedia .wrapInforTeacher {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-height: 651px;
+  overflow: hidden;
+}
+
+.subjectMultimedia .wrapInforTeacher .wrapInforTeacher_item {
+  margin-bottom: 40px;
+  width: 100%;
+  height: 296px;
+  padding: 20px 70px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.subjectMultimedia .wrapInforTeacher .wrapInforTeacher_item h3 {
+  color: #28587e;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+
+.subjectMultimedia .wrapInforTeacher .wrapInforTeacher_item img {
+  width: 100px;
+  height: 100px;
+}
+
+.subjectMultimedia .wrapInforTeacher .wrapInforTeacher_item .nameTeacher {
+  color: #28587e;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.subjectMultimedia .wrapInforTeacher .wrapInforTeacher_item p {
+  color: #28587e;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+/*# sourceMappingURL=style.css.map */
