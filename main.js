@@ -13,3 +13,16 @@ navBar_itemsSpan.forEach((item, index) => {
     inforNavbar_items[index].classList.add("active");
   });
 });
+/// xuât hiện thêm các ảnh
+const wrapInforTeacher = document.querySelector(".wrapInforTeacher");
+const btnDown = document.querySelector(".btnDown");
+const wrapInforTeacher_items = document.querySelectorAll(
+  ".wrapInforTeacher_item"
+);
+
+btnDown.addEventListener("click", () => {
+  wrapInforTeacher.classList.toggle("show");
+  btnDown.classList.toggle("show");
+  // wrapInforTeacher_items[1].classList.toggle("show");
+  wrapInforTeacher_items[2].classList.toggle("show");
+});

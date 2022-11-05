@@ -51,3 +51,24 @@
     left: 40%;
   }
 }
+@keyframes iconDown {
+  100% {
+    margin-top: 26px;
+  }
+}
+@keyframes btnMoveWhenShow {
+  100% {
+    top: 95%;
+  }
+}
+
+@keyframes showMoreInfor {
+  0% {
+    margin-top: -100px;
+    opacity: 0;
+  }
+  100% {
+    margin-top: 0px;
+    opacity: 1;
+  }
+}

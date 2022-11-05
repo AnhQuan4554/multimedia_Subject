@@ -120,12 +120,30 @@
   }
   /* ÌnorrTeach */
   .wrapInforTeacher {
+    position: relative;
     width: 30%;
     // background-color: green;
     display: flex;
     flex-direction: column;
-    max-height: 651px;
+    min-height: 651px;
     overflow: hidden;
+    &.show {
+      // animation: showMoreInfor 1s linear;
+      &::after {
+        display: none;
+      }
+    }
+    &::after {
+      content: " ";
+      width: 120%;
+      height: 300px;
+      background: #fff;
+      filter: blur(15px);
+      position: absolute;
+      top: 58%;
+      left: -50px;
+      // box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
     .wrapInforTeacher_item {
       margin-bottom: 40px;
       width: 100%;
@@ -164,6 +182,52 @@
         font-weight: 400;
         font-size: 14px;
         line-height: 24px;
+      }
+      // &:nth-child(2) {
+      //   margin-top: -100px;
+      //   opacity: 0;
+      // }
+      &:nth-child(3) {
+        margin-top: -100px;
+        opacity: 0;
+      }
+      &.show {
+        animation: showMoreInfor 0.8s linear both;
+        &.delay {
+          animation-delay: 1.5s;
+        }
+      }
+    }
+    .btnDown {
+      position: absolute;
+      z-index: 1;
+      width: 133px;
+      height: 42px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1.5px solid #737373;
+      border-radius: 38px;
+      background-color: #737373;
+      top: 58%;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 30px;
+      color: #fff;
+      cursor: pointer;
+      &.show {
+        animation: btnMoveWhenShow 1s ease-in-out 1s forwards;
+        .bx-downvote {
+          transform: rotate(180deg);
+          transition: all 0.5s linear;
+        }
+      }
+      &:hover {
+        background-color: #f69522;
+        transition: all 0.3s linear;
+      }
+      .bx-downvote {
+        animation: iconDown 0.6s linear infinite;
       }
     }
   }
