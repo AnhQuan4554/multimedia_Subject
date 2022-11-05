@@ -82,25 +82,32 @@
       align-items: center;
       justify-content: space-between;
       padding: 10px 16px;
-      span {
-        display: block;
-        font-family: "Inter";
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        // color: #ffffff;
-        color: #737373;
-        border-radius: 8px;
-        padding: 10px;
-        &:hover {
-          background: #f69522;
-          color: #fff;
-          transition: all 0.3s linear;
-          cursor: pointer;
+      position: relative;
+
+      .navBar_item {
+        span {
+          display: block;
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          position: relative;
+          color: #737373;
+          border-radius: 8px;
+          padding: 10px;
+          &:hover {
+            background: #f69522;
+            color: #fff;
+            transition: all 0.3s linear;
+            cursor: pointer;
+          }
         }
         &.active {
+          span {
+            color: #fff;
+          }
           background: #f69522;
-          color: #fff;
+          border-radius: 8px;
         }
       }
     }
@@ -111,7 +118,9 @@
       padding: 20px;
       .inforNavbar_item {
         display: none;
-
+        p {
+          animation: textAnimotion linear 0.6s both;
+        }
         &.active {
           display: block;
         }

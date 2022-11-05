@@ -107,20 +107,22 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 10px 16px;
+  position: relative;
 }
 
-.subjectMultimedia .wrapInforSubject .navBar span {
+.subjectMultimedia .wrapInforSubject .navBar .navBar_item span {
   display: block;
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
+  position: relative;
   color: #737373;
   border-radius: 8px;
   padding: 10px;
 }
 
-.subjectMultimedia .wrapInforSubject .navBar span:hover {
+.subjectMultimedia .wrapInforSubject .navBar .navBar_item span:hover {
   background: #f69522;
   color: #fff;
   -webkit-transition: all 0.3s linear;
@@ -128,8 +130,12 @@
   cursor: pointer;
 }
 
-.subjectMultimedia .wrapInforSubject .navBar span.active {
+.subjectMultimedia .wrapInforSubject .navBar .navBar_item.active {
   background: #f69522;
+  border-radius: 8px;
+}
+
+.subjectMultimedia .wrapInforSubject .navBar .navBar_item.active span {
   color: #fff;
 }
 
@@ -142,6 +148,11 @@
 
 .subjectMultimedia .wrapInforSubject .inforNavbar .inforNavbar_item {
   display: none;
+}
+
+.subjectMultimedia .wrapInforSubject .inforNavbar .inforNavbar_item p {
+  -webkit-animation: textAnimotion linear 0.6s both;
+          animation: textAnimotion linear 0.6s both;
 }
 
 .subjectMultimedia .wrapInforSubject .inforNavbar .inforNavbar_item.active {

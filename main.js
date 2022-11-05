@@ -1,10 +1,8 @@
 const inforNavbar_items = document.querySelectorAll(".inforNavbar_item");
-const navBar_itemsSpan = document.querySelectorAll(".navBar_item span");
-navBar_itemsSpan.forEach((item, index) => {
-  item.addEventListener("click", () => {
-    document
-      .querySelector(".navBar_item span.active")
-      .classList.remove("active");
+const navBar_item = document.querySelectorAll(".navBar_item");
+navBar_item.forEach((item, index) => {
+  item.addEventListener("click", (e) => {
+    document.querySelector(".navBar_item.active").classList.remove("active");
     item.classList.add("active"); // thêm active vào từng item
     // xuất hiện thông tin
     document
@@ -13,6 +11,7 @@ navBar_itemsSpan.forEach((item, index) => {
     inforNavbar_items[index].classList.add("active");
   });
 });
+
 /// xuât hiện thêm các ảnh
 const wrapInforTeacher = document.querySelector(".wrapInforTeacher");
 const btnDown = document.querySelector(".btnDown");
