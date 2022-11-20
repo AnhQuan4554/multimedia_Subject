@@ -48,7 +48,22 @@
 
   100% {
     top: 30%;
-    left: 40%;
+    left: 32%;
+  }
+}
+@keyframes move2 {
+  70% {
+    top: 20%;
+    right: 27%;
+  }
+  100% {
+    top: 30%;
+    right: 30%;
+  }
+}
+@keyframes move3 {
+  100% {
+    top: 83%;
   }
 }
 @keyframes iconDown {
