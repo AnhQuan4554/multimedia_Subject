@@ -49,28 +49,38 @@
       .box2,
       .box3 {
         position: absolute;
-        width: 130px;
-        height: 130px;
-        border-radius: 50%;
+        width: 200px;
+        height: 200px;
       }
       .box1 {
-        background-color: red;
-        top: 30%;
-        left: 7%;
-        animation: scale 1s ease-in-out, move 2s linear 1s both;
+        width: 0px;
+        height: 0px;
+        border-left: 100px solid red;
+        border-right: 100px solid red;
+        border-top: 100px solid red;
+        border-bottom: 100px solid red;
+        animation: scale_Box1 1s linear forwards,
+          animationBox1 3s ease-in-out 1s both;
       }
       .box2 {
-        background-color: green;
-        top: 0;
-        right: 10%;
-        animation: scale 1s ease-in-out 2s, move2 1.4s ease-out 3s both;
+        // background-color: yellow;
+        // top: 0;
+        // right: 10%;
+
+        animation: scale_Box2 2s linear forwards,
+          animationBox2 2s linear 4s both,
+          animationBox2_move 3s linear 6s forwards;
       }
       .box3 {
+        width: 150px;
+        height: 150px;
         top: 100%;
         left: 50%;
-        transform: translate(-50%, -100%);
-        background-color: yellow;
-        animation: move3 1s ease-out 3s both;
+        top: 50%;
+        transform: translate(-50%, -50%);
+
+        border: 5px solid green;
+        animation: animationBox3 3s ease-in-out 8s both;
       }
     }
     .navBar {

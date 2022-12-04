@@ -1,6 +1,6 @@
 @keyframes scale {
   0% {
-    transform: scale(-1);
+    transform: scale(2);
   }
   50% {
     transform: scale(1.5);
@@ -9,6 +9,7 @@
     transform: scale(1);
   }
 }
+
 @keyframes move {
   0% {
     top: 30%;
@@ -51,6 +52,7 @@
     left: 32%;
   }
 }
+
 @keyframes move2 {
   70% {
     top: 20%;
@@ -95,5 +97,166 @@
   100% {
     opacity: 1;
     transform: scale(1);
+  }
+}
+@keyframes animationBox1 {
+  0% {
+    border-left: 100px solid red;
+    border-right: 100px solid red;
+    border-top: 100px solid red;
+    border-bottom: 100px solid red;
+  }
+  25% {
+    border-left: 100px solid transparent;
+    border-top: 100px solid red;
+    border-right: 100px solid red;
+    border-bottom: 100px solid red;
+  }
+  50% {
+    border-left: 100px solid transparent;
+    border-top: 100px solid transparent;
+    border-right: 100px solid red;
+    border-bottom: 100px solid red;
+  }
+  75% {
+    border-left: 100px solid transparent;
+    border-top: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 100px solid red;
+    left: 50%;
+  }
+  100% {
+    border-left: 100px solid transparent;
+    border-top: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 100px solid red;
+    left: 20%;
+  }
+}
+@keyframes scale_Box1 {
+  0% {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -87%) scale(2);
+  }
+  50% {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -87%) scale(1.5);
+  }
+  100% {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -70%) scale(1);
+  }
+}
+@keyframes animationBox2 {
+  0% {
+    border-radius: 0;
+  }
+
+  25% {
+    border-radius: 0%;
+    border-top: 70px solid red;
+    border-right: 0 solid rgb(52, 199, 135);
+    border-bottom: 0 solid rgb(87, 16, 145);
+    border-left: 0 solid rgb(190, 41, 158);
+  }
+
+  50% {
+    border-radius: 50%;
+    border-top: 70px solid red;
+    border-right: 70px solid rgb(52, 199, 135);
+    border-bottom: 0 solid rgb(87, 16, 145);
+    border-left: 0 solid rgb(190, 41, 158);
+  }
+
+  75% {
+    border-radius: 50%;
+    border-top: 70px solid red;
+    border-right: 70px solid rgb(52, 199, 135);
+    border-bottom: 70px solid rgb(87, 16, 145);
+    border-left: 0 solid rgb(190, 41, 158);
+  }
+
+  100% {
+    border-radius: 50%;
+    border-top: 70px solid red;
+    border-right: 70px solid rgb(52, 199, 135);
+    border-bottom: 70px solid rgb(87, 16, 145);
+    border-left: 70px solid rgb(190, 41, 158);
+  }
+}
+@keyframes scale_Box2 {
+  0% {
+    transform: scale(2);
+    border-style: solid;
+    border-width: 5px;
+    border-color: #f69522;
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%, -87%);
+  }
+  50% {
+    transform: scale(1.5);
+    border-style: solid;
+    border-width: 5px;
+    border-color: #f69522;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -87%);
+  }
+  100% {
+    transform: scale(1);
+    border-style: solid;
+    border-width: 5px;
+    border-color: #f69522;
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%, -87%);
+  }
+}
+@keyframes animationBox2_move {
+  0% {
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%, -87%) rotate(0);
+  }
+  100% {
+    top: 65%;
+    transform: translate(-50%, -87%) rotate(720deg);
+    left: 80%;
+  }
+}
+@keyframes animationBox3 {
+  0% {
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+  }
+  25% {
+    border-top-width: 5px;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+  }
+  50% {
+    border-top-width: 5px;
+    border-right-width: 5px;
+    border-bottom-width: 0;
+    border-left-width: 0;
+  }
+  75% {
+    border-top-width: 5px;
+    border-right-width: 5px;
+    border-bottom-width: 5px;
+    border-left-width: 0;
+  }
+  100% {
+    border-top-width: 153px;
+    border-right-width: 5px;
+    border-bottom-width: 5px;
+    border-left-width: 5px;
   }
 }
