@@ -49,18 +49,18 @@
       .box2,
       .box3 {
         position: absolute;
-        width: 200px;
-        height: 200px;
+        width: 160px;
+        height: 160px;
       }
       .box1 {
         width: 0px;
         height: 0px;
-        border-left: 100px solid red;
-        border-right: 100px solid red;
-        border-top: 100px solid red;
-        border-bottom: 100px solid red;
+        border-left: 100px solid #f79621;
+        border-right: 100px solid #f79621;
+        border-top: 100px solid #f79621;
+        border-bottom: 100px solid #f79621;
         animation: scale_Box1 1s linear forwards,
-          animationBox1 3s ease-in-out 1s both;
+          animationBox1 2s ease-in-out 1s both;
       }
       .box2 {
         // background-color: yellow;
@@ -68,8 +68,8 @@
         // right: 10%;
 
         animation: scale_Box2 2s linear forwards,
-          animationBox2 2s linear 4s both,
-          animationBox2_move 3s linear 6s forwards;
+          animationBox2 2s linear 3s both,
+          animationBox2_move 2s linear 4s forwards;
       }
       .box3 {
         width: 150px;
@@ -79,8 +79,8 @@
         top: 50%;
         transform: translate(-50%, -50%);
 
-        border: 5px solid green;
-        animation: animationBox3 3s ease-in-out 8s both;
+        border: 5px solid #28587e;
+        animation: animationBox3 2s ease-in-out 5s both;
       }
     }
     .navBar {
@@ -204,18 +204,14 @@
         font-size: 14px;
         line-height: 24px;
       }
-      // &:nth-child(2) {
-      //   margin-top: -100px;
-      //   opacity: 0;
-      // }
       &:nth-child(3) {
         margin-top: -100px;
         opacity: 0;
       }
       &.show {
-        animation: showMoreInfor 0.8s linear both;
+        animation: showMoreInfor 0.5s linear both;
         &.delay {
-          animation-delay: 1.5s;
+          animation-delay: 1s;
         }
       }
     }
@@ -236,8 +232,11 @@
       font-size: 30px;
       color: #fff;
       cursor: pointer;
+      &.unShow {
+        animation: btnMoveWhenUnshow 0.5s ease-in-out both;
+      }
       &.show {
-        animation: btnMoveWhenShow 1s ease-in-out 1s forwards;
+        animation: btnMoveWhenShow 1s ease-in-out 0.3s forwards;
         .bx-downvote {
           transform: rotate(180deg);
           transition: all 0.5s linear;

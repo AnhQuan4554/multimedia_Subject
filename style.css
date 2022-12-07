@@ -62,24 +62,24 @@
 .subjectMultimedia .wrapInforSubject .backGroundAni .box2,
 .subjectMultimedia .wrapInforSubject .backGroundAni .box3 {
   position: absolute;
-  width: 200px;
-  height: 200px;
+  width: 160px;
+  height: 160px;
 }
 
 .subjectMultimedia .wrapInforSubject .backGroundAni .box1 {
   width: 0px;
   height: 0px;
-  border-left: 100px solid red;
-  border-right: 100px solid red;
-  border-top: 100px solid red;
-  border-bottom: 100px solid red;
-  -webkit-animation: scale_Box1 1s linear forwards, animationBox1 3s ease-in-out 1s both;
-          animation: scale_Box1 1s linear forwards, animationBox1 3s ease-in-out 1s both;
+  border-left: 100px solid #f79621;
+  border-right: 100px solid #f79621;
+  border-top: 100px solid #f79621;
+  border-bottom: 100px solid #f79621;
+  -webkit-animation: scale_Box1 1s linear forwards, animationBox1 2s ease-in-out 1s both;
+          animation: scale_Box1 1s linear forwards, animationBox1 2s ease-in-out 1s both;
 }
 
 .subjectMultimedia .wrapInforSubject .backGroundAni .box2 {
-  -webkit-animation: scale_Box2 2s linear forwards, animationBox2 2s linear 4s both, animationBox2_move 3s linear 6s forwards;
-          animation: scale_Box2 2s linear forwards, animationBox2 2s linear 4s both, animationBox2_move 3s linear 6s forwards;
+  -webkit-animation: scale_Box2 2s linear forwards, animationBox2 2s linear 3s both, animationBox2_move 2s linear 4s forwards;
+          animation: scale_Box2 2s linear forwards, animationBox2 2s linear 3s both, animationBox2_move 2s linear 4s forwards;
 }
 
 .subjectMultimedia .wrapInforSubject .backGroundAni .box3 {
@@ -90,9 +90,9 @@
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  border: 5px solid green;
-  -webkit-animation: animationBox3 3s ease-in-out 8s both;
-          animation: animationBox3 3s ease-in-out 8s both;
+  border: 5px solid #28587e;
+  -webkit-animation: animationBox3 2s ease-in-out 5s both;
+          animation: animationBox3 2s ease-in-out 5s both;
 }
 
 .subjectMultimedia .wrapInforSubject .navBar {
@@ -253,13 +253,13 @@
 }
 
 .subjectMultimedia .wrapInforTeacher .wrapInforTeacher_item.show {
-  -webkit-animation: showMoreInfor 0.8s linear both;
-          animation: showMoreInfor 0.8s linear both;
+  -webkit-animation: showMoreInfor 0.5s linear both;
+          animation: showMoreInfor 0.5s linear both;
 }
 
 .subjectMultimedia .wrapInforTeacher .wrapInforTeacher_item.show.delay {
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 
 .subjectMultimedia .wrapInforTeacher .btnDown {
@@ -288,9 +288,14 @@
   cursor: pointer;
 }
 
+.subjectMultimedia .wrapInforTeacher .btnDown.unShow {
+  -webkit-animation: btnMoveWhenUnshow 0.5s ease-in-out both;
+          animation: btnMoveWhenUnshow 0.5s ease-in-out both;
+}
+
 .subjectMultimedia .wrapInforTeacher .btnDown.show {
-  -webkit-animation: btnMoveWhenShow 1s ease-in-out 1s forwards;
-          animation: btnMoveWhenShow 1s ease-in-out 1s forwards;
+  -webkit-animation: btnMoveWhenShow 1s ease-in-out 0.3s forwards;
+          animation: btnMoveWhenShow 1s ease-in-out 0.3s forwards;
 }
 
 .subjectMultimedia .wrapInforTeacher .btnDown.show .bx-downvote {

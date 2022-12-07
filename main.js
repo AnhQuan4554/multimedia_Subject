@@ -21,7 +21,12 @@ const wrapInforTeacher_items = document.querySelectorAll(
 
 btnDown.addEventListener("click", () => {
   wrapInforTeacher.classList.toggle("show");
-  btnDown.classList.toggle("show");
-  // wrapInforTeacher_items[1].classList.toggle("show");
+
+  if (btnDown.classList.contains("show")) {
+    btnDown.classList.remove("show");
+    btnDown.classList.add("unShow");
+  } else {
+    btnDown.classList.add("show");
+  }
   wrapInforTeacher_items[2].classList.toggle("show");
 });

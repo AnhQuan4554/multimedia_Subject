@@ -78,6 +78,14 @@
     top: 95%;
   }
 }
+@keyframes btnMoveWhenUnshow {
+  0% {
+    top: 95%;
+  }
+  100% {
+    top: 58%;
+  }
+}
 
 @keyframes showMoreInfor {
   0% {
@@ -101,36 +109,36 @@
 }
 @keyframes animationBox1 {
   0% {
-    border-left: 100px solid red;
-    border-right: 100px solid red;
-    border-top: 100px solid red;
-    border-bottom: 100px solid red;
+    border-left: 100px solid #f79621;
+    border-right: 100px solid #f79621;
+    border-top: 100px solid #f79621;
+    border-bottom: 100px solid #f79621;
   }
   25% {
     border-left: 100px solid transparent;
-    border-top: 100px solid red;
-    border-right: 100px solid red;
-    border-bottom: 100px solid red;
+    border-top: 100px solid #f79621;
+    border-right: 100px solid #f79621;
+    border-bottom: 100px solid #f79621;
   }
   50% {
     border-left: 100px solid transparent;
     border-top: 100px solid transparent;
-    border-right: 100px solid red;
-    border-bottom: 100px solid red;
+    border-right: 100px solid #f79621;
+    border-bottom: 100px solid #f79621;
   }
   75% {
     border-left: 100px solid transparent;
     border-top: 100px solid transparent;
     border-right: 100px solid transparent;
-    border-bottom: 100px solid red;
+    border-bottom: 100px solid #f79621;
     left: 50%;
   }
   100% {
     border-left: 100px solid transparent;
     border-top: 100px solid transparent;
     border-right: 100px solid transparent;
-    border-bottom: 100px solid red;
-    left: 20%;
+    border-bottom: 152px solid #f79621ed;
+    left: 16%;
   }
 }
 @keyframes scale_Box1 {
@@ -157,32 +165,32 @@
 
   25% {
     border-radius: 0%;
-    border-top: 70px solid red;
-    border-right: 0 solid rgb(52, 199, 135);
+    border-top: 70px solid #28587e;
+    border-right: 0 solid #f79621;
     border-bottom: 0 solid rgb(87, 16, 145);
     border-left: 0 solid rgb(190, 41, 158);
   }
 
   50% {
     border-radius: 50%;
-    border-top: 70px solid red;
-    border-right: 70px solid rgb(52, 199, 135);
+    border-top: 70px solid #28587e;
+    border-right: 70px solid #f79621;
     border-bottom: 0 solid rgb(87, 16, 145);
     border-left: 0 solid rgb(190, 41, 158);
   }
 
   75% {
     border-radius: 50%;
-    border-top: 70px solid red;
-    border-right: 70px solid rgb(52, 199, 135);
+    border-top: 70px solid #28587e;
+    border-right: 70px solid #f79621;
     border-bottom: 70px solid rgb(87, 16, 145);
     border-left: 0 solid rgb(190, 41, 158);
   }
 
   100% {
     border-radius: 50%;
-    border-top: 70px solid red;
-    border-right: 70px solid rgb(52, 199, 135);
+    border-top: 70px solid #28587e;
+    border-right: 70px solid #f79621;
     border-bottom: 70px solid rgb(87, 16, 145);
     border-left: 70px solid rgb(190, 41, 158);
   }
